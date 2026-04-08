@@ -1,6 +1,4 @@
 
-
-```markdown
 # Intelligent Policy Analyzer
 
 The **Intelligent Policy Analyzer** is an automated extraction engine designed to ingest complex insurance policy documents (PDFs) and instantly parse them into structured, actionable data. 
@@ -85,7 +83,6 @@ The extraction engine guarantees the following structured output, which can be e
 }
 ```
 
----
 
 ## 🚀 Getting Started
 
