@@ -1,9 +1,12 @@
-````markdown
+
 # Intelligent Policy Analyzer
 
 An automated extraction engine that parses complex PDF insurance documents into structured, actionable JSON data.
 
-![Hero Image / App Screenshot Here](placeholder-hero-image.png)
+<img width="1919" height="775" alt="image" src="https://github.com/user-attachments/assets/65cc8578-33eb-404e-bbc9-ac8849d66bb3" />
+<img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/60b4b019-81dd-47d3-aa88-1b7e4bd7441a" />
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/b0e68796-b3d9-4665-b31f-3b2b5c8489ce" />
+
 
 ---
 
@@ -16,9 +19,10 @@ An automated extraction engine that parses complex PDF insurance documents into 
 
 ---
 
+
+
 ## ⚙️ System Pipeline
 
-![Architecture/Data Flow Diagram Here](placeholder-architecture-diagram.png)
 
 1. **Ingest:** Upload raw PDF policy documents (up to 10MB).
 2. **Process:** Backend parses unstructured text using extraction heuristics.
@@ -58,9 +62,7 @@ An automated extraction engine that parses complex PDF insurance documents into 
   ],
   "critical_exclusions": ["String"]
 }
-````
-
------
+```
 
 ## 🚀 Quick Start
 
@@ -80,7 +82,4 @@ npm run dev
   * **Frontend:** React, Tailwind CSS
   * **Backend Target:** FastAPI / Python
 
-<!-- end list -->
 
-```
-```
