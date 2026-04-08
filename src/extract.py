@@ -4,12 +4,17 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 
+# Load the environment
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GEMINI_API"))
+# NOTICE: The global 'client = ...' line is GONE from here!
 
 def extract_insurance_data(markdown_text: str):
     
+    # Python won't execute this line until the function is actually called by the server
+    client = genai.Client(api_key=os.getenv("GEMINI_API"))
+
+    # (Note: Double check if this needs to be "src/prompt.txt" depending on where you saved it!)
     with open("prompt.txt", "r") as f:
         system_prompt = f.read()
 

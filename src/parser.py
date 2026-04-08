@@ -1,7 +1,10 @@
 import os
 from llama_cloud import AsyncLlamaCloud
+from dotenv import load_dotenv
+load_dotenv()
 
 async def get_markdown_from_pdf(file_path: str):
+   
     
     client = AsyncLlamaCloud(api_key=os.getenv("LLAMA_CLOUD_API_KEY"))
 
