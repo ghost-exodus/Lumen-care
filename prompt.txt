@@ -3,29 +3,23 @@ Read the provided health insurance policy markdown and extract the following inf
 
 Extract exactly this JSON structure:
 {
-  "policy_name": "Name of the insurance policy",
-  "insurance_company": "Name of the company providing the insurance",
-  "primary_covers": [
-    {
-      "cover_name": "Name of the cover (e.g., Surrogate Cover, Oocyte Donor Cover)",
-      "sum_insured_details": "Details about the sum insured or limits",
-      "key_features": ["Feature 1", "Feature 2"]
-    }
-  ],
-  "waiting_periods": [
-    {
-      "condition": "Name of the condition or disease",
-      "duration": "Waiting period duration (e.g., 36 months, 30 days)"
-    }
-  ],
-  "critical_exclusions": [
-    "Exclusion 1",
-    "Exclusion 2",
-    "Exclusion 3"
-  ],
+  "policy_name": "string",
+  "insurance_company": "string",
   "policy_metrics": {
-    "grace_period": "Details about the grace period",
-    "free_look_period": "Details about the free look period",
-    "claim_settlement_time": "Required time to settle a claim"
-  }
+    "grace_period": "string",
+    "free_look_period": "string",
+    "claim_settlement_time": "string",
+    "policy_term_duration": "string (e.g., '1 Year')" 
+  },
+  "financial_parameters": {
+    "copayment_clauses": "string (Extract ANY percentage co-pays based on age or zone. If none, write 'None Explicitly Stated')",
+    "tax_benefits": "string (Extract exact tax sections like 80D)"
+  },
+  "eligibility": {
+    "adult_age_limits": "string (e.g., '18 to 65 years')",
+    "child_age_limits": "string"
+  },
+  "primary_covers": "Extract covers as short, punchy bullet points (max 8 words each).",
+  "waiting_periods": [...],
+  "critical_exclusions": "List as an array of short strings. KEEP IT EXTREMELY CONCISE. Maximum 10 words per exclusion. Do not use full sentences. Example: 'Cosmetic surgery', 'Self-inflicted injuries'."
 }

@@ -22,7 +22,7 @@ app.add_middleware(
 
 # REQUIREMENT 1: Define the Endpoint Route
 @app.post("/api/extract")
-async def process_insurance_document(file: UploadFile = File("C:\code\RAG")):
+async def process_insurance_document(file: UploadFile = File(...)):
     
     # Save the uploaded file temporarily so LlamaParse can read it
     temp_file_path = f"temp_{file.filename}"

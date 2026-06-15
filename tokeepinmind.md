@@ -1,0 +1,2 @@
+-clear cache by deleting .next in frontend if frontend is stuck on loop and refreshing
+-instead of whole weight on gemini to parse and analyze the pdf causing rate limiting issues and obsuftication of policy terms . we use  middle handler name Llama index specializing in parsing 
