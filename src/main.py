@@ -4,9 +4,9 @@ import shutil
 import os
 from dotenv import load_dotenv
 
-# Load the secrets BEFORE importing our custom files
+
 load_dotenv()
-# Import the custom functions you just built!
+
 from src.parser import get_markdown_from_pdf
 from src.extract import extract_insurance_data
 
@@ -20,7 +20,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# REQUIREMENT 1: Define the Endpoint Route
 @app.post("/api/extract")
 async def process_insurance_document(file: UploadFile = File(...)):
     
@@ -30,10 +29,10 @@ async def process_insurance_document(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     try:
-        # REQUIREMENT 2: Parse the PDF
+        
         markdown_text = await get_markdown_from_pdf(temp_file_path)
 
-        # REQUIREMENT 3: Extract the Data
+        
         extracted_json = extract_insurance_data(markdown_text)
 
         # REQUIREMENT 4: Return the Data
