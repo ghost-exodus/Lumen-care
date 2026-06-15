@@ -1,8 +1,11 @@
 # Lumen Care
 
-<img width="1919" height="775" alt="image" src="https://github.com/user-attachments/assets/65cc8578-33eb-404e-bbc9-ac8849d66bb3" />
-<img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/60b4b019-81dd-47d3-aa88-1b7e4bd7441a" />
-<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/b0e68796-b3d9-4665-b31f-3b2b5c8489ce" />
+
+https://github.com/user-attachments/assets/391f82a7-4405-4b2d-bc17-e1cee3c9bc70
+
+
+
+
 
 
 An AI-powered tool that reads health insurance policy documents and converts them into a clear, structured summary of coverage, exclusions, waiting periods, and key policy metrics.
